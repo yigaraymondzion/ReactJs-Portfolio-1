@@ -1,0 +1,155 @@
+.about {
+  margin-bottom: 2.9rem;
+}
+
+.about__container {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.about__image img {
+  /* Equal to scaleX(0.7) scaleY(0.7) */
+  background-color: var(--color-light);
+  border-radius: 20px;
+  width: 350px;
+  height: 340px;
+}
+.about__contact {
+  display: grid;
+  grid-template-columns: 220px auto;
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  margin: 1rem 0;
+  /*display: flex;
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  margin: 1rem 0;*/
+}
+.about__contact p {
+  padding: 0.5rem 0.5rem;
+}
+.cta {
+  display: flex;
+}
+
+/*============================== QUALIFICATIONS =============================*/
+.qualification__container {
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.education__tab h3,
+.experience__tab h3 {
+  text-align: center;
+  font-weight: 500;
+}
+.education__tab {
+  border-right: 1px solid var(--color-primary);
+}
+
+.line-1 {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background: var(--color-primary);
+  margin-left: 12rem;
+}
+
+.education__data-m {
+  display: grid;
+  grid-template-columns: 130px auto;
+  margin-left: 2rem;
+}
+.education__data-m h4,
+.education__data-y p,
+.education__data-m p {
+  margin-left: 1.2rem;
+  margin-top: 0.6rem;
+}
+
+.education__data-y {
+  margin-left: 2rem;
+}
+
+/*=====================BREAK POINTS====================*/
+
+@media screen and (max-width: 1024px) {
+  .about__image img {
+    /* Equal to scaleX(0.7) scaleY(0.7) */
+    background-color: var(--color-light);
+    border-radius: 20px;
+    width: 240px;
+    height: 240px;
+  }
+
+  .about__contact {
+    /*flex-direction: column;*/
+    grid-template-columns: 1fr;
+  }
+  .line-1 {
+    margin-left: 10rem;
+  }
+}
+
+/*=====================MEDIA QUERIES - medium SCREENS====================*/
+@media screen and (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__image img {
+    /* Equal to scaleX(0.7) scaleY(0.7) */
+    background-color: var(--color-light);
+    border-radius: 20px;
+    width: 240px;
+    height: 240px;
+  }
+  .about__contact {
+    /*flex-direction: column;*/
+    grid-template-columns: 1fr;
+  }
+  .cta {
+    flex-direction: column;
+  }
+  .qualification__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .line-1 {
+    margin-left: 18rem;
+  }
+  .education__tab {
+    margin-top: 1.5rem;
+    border-right: none;
+  }
+  .education__data,
+  .education__calender {
+    margin-top: 1rem;
+  }
+  .experience__tab {
+    margin-top: 1.8rem;
+  }
+  .education__data-m {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*=====================MEDIA QUERIES - medium SCREENS====================*/
+@media screen and (max-width: 606px) {
+  .line-1 {
+    margin-left: 13rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .line-1 {
+    margin-left: 8rem;
+  }
+}
+
+/*=====================MEDIA QUERIES - medium SCREENS====================*/
+@media screen and (max-width: 350px) {
+  .line-1 {
+    margin-left: 6rem;
+  }
+}
